@@ -431,7 +431,7 @@ export async function askAboutTerms(
       }
     }
 
-    // Use AI to answer the question based on the ToS content
+    // system prompt 
     const { text } = await generateText({
       model: openai("gpt-4o"),
       system:
